@@ -9,6 +9,7 @@
     "lint:fix": "node_modules/.bin/eslint --ext .js ./ --fix"
   },
   "devDependencies": {
+    "@severi/serverless-stack-output": "^0.4.6",
     "serverless-bundle": "^1.2.5"
   }
 }

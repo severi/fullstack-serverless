@@ -2,6 +2,12 @@ service: serverless-api
 
 plugins:
   - serverless-bundle
+  - '@severi/serverless-stack-output'
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  output:
+    file: .stack.${self:custom.stage}.react_app # using our custom .react_app -format here
 
 package:
   individually: true
@@ -19,3 +25,4 @@ functions:
       - http:
           path: myfunction
           method: get
+          cors: true
