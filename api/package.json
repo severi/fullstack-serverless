@@ -3,5 +3,12 @@
   "version": "1.0.0",
   "description": "Simple serverless API",
   "author": "Severi Haverila",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lint": "node_modules/.bin/eslint --ext .js ./",
+    "lint:fix": "node_modules/.bin/eslint --ext .js ./ --fix"
+  },
+  "devDependencies": {
+    "serverless-bundle": "^1.2.5"
+  }
 }
